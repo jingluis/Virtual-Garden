@@ -1,5 +1,6 @@
 package com.example.android.plantas;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +9,6 @@ import android.widget.Button;
 
 public class SearchActivity extends AppCompatActivity {
 
-    String value="0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,39 +25,43 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value="cactus";
-                Intent i = new Intent(SearchActivity.this, MainActivity.class);
+                Intent i = new Intent();
                 i.putExtra("key",value);
-                startActivity(i);
+                setResult(Activity.RESULT_OK, i);
+                finish();
             }
         });
 
         aloe_vera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(SearchActivity.this, MainActivity.class);
                 String value="aloe_vera";
+                Intent i = new Intent();
                 i.putExtra("key",value);
-                startActivity(i);
+                setResult(Activity.RESULT_OK, i);
+                finish();
             }
         });
 
         daisy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(SearchActivity.this, MainActivity.class);
                 String value="daisy";
+                Intent i = new Intent();
                 i.putExtra("key",value);
-                startActivity(i);
+                setResult(Activity.RESULT_OK, i);
+                finish();
             }
         });
 
         mint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(SearchActivity.this, MainActivity.class);
                 String value="mint";
+                Intent i = new Intent();
                 i.putExtra("key",value);
-                startActivity(i);
+                setResult(Activity.RESULT_OK, i);
+                finish();
             }
         });
 

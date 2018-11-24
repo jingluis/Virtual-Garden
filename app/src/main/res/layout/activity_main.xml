@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,12 +23,58 @@
 
     <include layout="@layout/content_main" />
 
-    <TextView
-        android:id="@+id/prueba"
-        android:layout_width="302dp"
-        android:layout_height="wrap_content"
-        android:text="hola"
-        android:textSize="100sp" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="120dp">
+
+           <ImageView
+               android:id="@+id/primer"
+               android:layout_width="22dp"
+               android:layout_height="153dp"
+               android:layout_weight="1"
+               android:src="@drawable/cactus1"
+               android:visibility="invisible"/>
+
+           <ImageView
+               android:id="@+id/segon"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:src="@drawable/aloe1"
+               android:visibility="invisible"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+
+           android:layout_marginTop="120dp">
+
+           <ImageView
+               android:id="@+id/tercer"
+               android:layout_width="0dp"
+               android:layout_height="149dp"
+               android:layout_weight="1"
+               android:src="@drawable/daisy1"
+               android:visibility="invisible"/>
+
+           <ImageView
+               android:id="@+id/quart"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:src="@drawable/mint1"
+               android:visibility="invisible"/>
+
+       </LinearLayout>
+   </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -36,6 +83,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@color/colorAccent"
-        app:srcCompat="@drawable/add" />
+        app:srcCompat="@drawable/add"
+        />
 
 </android.support.design.widget.CoordinatorLayout>
