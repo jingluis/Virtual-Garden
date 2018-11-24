@@ -15,8 +15,8 @@
         android:iconifiedByDefault="false"
         android:queryHint="Buscar una planta" />
     <Button
-        android:id="@+id/next_button"
-        android:text="cactus"
+        android:id="@+id/cactus_button"
+        android:text="CACTUS"
         android:textSize="26dp"
         android:layout_marginTop="25dp"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:drawableLeft="@drawable/adios_opt" >
     </Button>
     <Button
-        android:id="@+id/next_button"
+        android:id="@+id/aloe_vera_button"
         android:text="ALOE VERA"
         android:textSize="26dp"
         android:layout_marginTop="25dp"
@@ -33,8 +33,8 @@
         android:drawableLeft="@drawable/adios_opt" >
     </Button>
     <Button
-        android:id="@+id/next_button"
-        android:text="MARGARITA"
+        android:id="@+id/daisy_button"
+        android:text="DAISY"
         android:textSize="26dp"
         android:layout_marginTop="25dp"
         android:layout_width="match_parent"
@@ -42,8 +42,8 @@
         android:drawableLeft="@drawable/adios_opt" >
     </Button>
     <Button
-        android:id="@+id/next_button"
-        android:text="MENTA"
+        android:id="@+id/mint_button"
+        android:text="MINT"
         android:textSize="26dp"
         android:layout_marginTop="25dp"
         android:layout_width="match_parent"
