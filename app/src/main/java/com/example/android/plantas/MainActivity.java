@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +29,12 @@ public class MainActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String value = extras.getString("key");
-            //The key argument here must match that used in the other activity
+            TextView textView = (TextView) findViewById(R.id.prueba);
+            textView.setText(value); //set text for text view
         }
+
+
+
+
     }
 }
