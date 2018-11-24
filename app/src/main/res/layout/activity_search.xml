@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="19dp"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/search_viewr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Buscar una planta" />
+    <Button
+        android:id="@+id/next_button"
+        android:text="cactus"
+        android:textSize="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:drawableLeft="@drawable/adios_opt" >
+    </Button>
+    <Button
+        android:id="@+id/next_button"
+        android:text="ALOE VERA"
+        android:textSize="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:drawableLeft="@drawable/adios_opt" >
+    </Button>
+    <Button
+        android:id="@+id/next_button"
+        android:text="MARGARITA"
+        android:textSize="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:drawableLeft="@drawable/adios_opt" >
+    </Button>
+    <Button
+        android:id="@+id/next_button"
+        android:text="MENTA"
+        android:textSize="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:drawableLeft="@drawable/adios_opt" >
+    </Button>
+</LinearLayout>
