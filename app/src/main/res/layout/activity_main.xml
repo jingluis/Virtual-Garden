@@ -14,21 +14,40 @@
         android:layout_height="wrap_content"
         android:iconifiedByDefault="false"
         android:queryHint="Buscar una planta" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-
     <Button
         android:id="@+id/next_button"
         android:text="cactus"
         android:textSize="26dp"
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="69dp"
         android:drawableLeft="@drawable/adios_opt" >
     </Button>
-
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/next_button"
+        android:text="ALOE VERA"
+        android:textSize="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:drawableLeft="@drawable/adios_opt" >
+    </Button>
+    <Button
+        android:id="@+id/next_button"
+        android:text="MARGARITA"
+        android:textSize="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:drawableLeft="@drawable/adios_opt" >
+    </Button>
+    <Button
+        android:id="@+id/next_button"
+        android:text="MENTA"
+        android:textSize="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:drawableLeft="@drawable/adios_opt" >
+    </Button>
 </LinearLayout>
