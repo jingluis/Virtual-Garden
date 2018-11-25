@@ -13,41 +13,68 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:iconifiedByDefault="false"
-        android:queryHint="Buscar una planta" />
+        android:queryHint="Buscar una planta"
+        android:visibility="gone" />
+
+
     <Button
         android:id="@+id/cactus_button"
-        android:text="CACTUS"
-        android:textSize="26dp"
-        android:layout_marginTop="25dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:drawableLeft="@drawable/adios_opt" >
-    </Button>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/aloe1peq"
+        android:text="CACTUS"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"></Button>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#aaaaaa" />
+
     <Button
         android:id="@+id/aloe_vera_button"
-        android:text="ALOE VERA"
-        android:textSize="26dp"
-        android:layout_marginTop="25dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:drawableLeft="@drawable/adios_opt" >
-    </Button>
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/aloe1peq"
+        android:text="ALOE VERA"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"></Button>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#aaaaaa" />
+
     <Button
         android:id="@+id/daisy_button"
-        android:text="DAISY"
-        android:textSize="26dp"
-        android:layout_marginTop="25dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:drawableLeft="@drawable/adios_opt" >
-    </Button>
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/aloe1peq"
+        android:text="DAISY"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"></Button>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#aaaaaa" />
+
     <Button
         android:id="@+id/mint_button"
-        android:text="MINT"
-        android:textSize="26dp"
-        android:layout_marginTop="25dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:drawableLeft="@drawable/adios_opt" >
-    </Button>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/aloe1peq"
+
+        android:text="MINT"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"></Button>
 </LinearLayout>
