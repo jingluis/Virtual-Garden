@@ -21,7 +21,11 @@
         </activity>
         <activity
             android:name=".SearchActivity"
-            android:label="Plants"></activity>
+            android:label="Plants" />
+        <activity
+            android:name=".InfoCactus"
+            android:label="@string/title_activity_info_cactus"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

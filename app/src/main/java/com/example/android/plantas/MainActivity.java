@@ -1,5 +1,6 @@
 package com.example.android.plantas;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,11 +12,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton i = (ImageButton) findViewById(R.id.primer) ;
+
+        i.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, InfoCactus.class));
+            }
+        });
     }
 
     @Override
@@ -51,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
             if(value.equals("cactus")){
                 int found = 0;
                 if(found == 0) {
-                    ImageView imag = (ImageView) findViewById(R.id.primer);
-                    ImageView imag1 = (ImageView) findViewById(R.id.segon);
-                    ImageView imag2 = (ImageView) findViewById(R.id.tercer);
-                    ImageView imag3 = (ImageView) findViewById(R.id.quart);
+                    ImageButton imag = (ImageButton) findViewById(R.id.primer);
+                    ImageButton imag1 = (ImageButton) findViewById(R.id.segon);
+                    ImageButton imag2 = (ImageButton) findViewById(R.id.tercer);
+                    ImageButton imag3 = (ImageButton) findViewById(R.id.quart);
                     String s = String.valueOf(imag.getTag());
                     String s1 = String.valueOf(imag1.getTag());
                     String s2 = String.valueOf(imag2.getTag());
@@ -82,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(found == 0) {
                     if(count % 4 == 0){
-                        ImageView imag = (ImageView) findViewById(R.id.primer);
+                        ImageButton imag = (ImageButton) findViewById(R.id.primer);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res")) imag.setTag("cactus1");
                         if(s.equals("cactus1") && imag.getVisibility()==imag.VISIBLE){
@@ -90,9 +100,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("cactus4");
                         }
                         else imag.setImageResource(R.drawable.cactus1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else if(count % 4 == 1){
-                        ImageView imag = (ImageView) findViewById(R.id.segon);
+                        ImageButton imag = (ImageButton) findViewById(R.id.segon);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res1")) imag.setTag("cactus1");
                         if(s.equals("cactus1") && imag.getVisibility()==imag.VISIBLE){
@@ -100,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("cactus4");
                         }
                         else imag.setImageResource(R.drawable.cactus1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else if(count % 4 == 2){
-                        ImageView imag = (ImageView) findViewById(R.id.tercer);
+                        ImageButton imag = (ImageButton) findViewById(R.id.tercer);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res2")) imag.setTag("cactus1");
                         if(s.equals("cactus1") && imag.getVisibility()==imag.VISIBLE){
@@ -110,9 +120,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("cactus4");
                         }
                         else imag.setImageResource(R.drawable.cactus1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else{
-                        ImageView imag = (ImageView) findViewById(R.id.quart);
+                        ImageButton imag = (ImageButton) findViewById(R.id.quart);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res3")) imag.setTag("cactus1");
                         if(s.equals("cactus1") && imag.getVisibility()==imag.VISIBLE){
@@ -120,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("cactus4");
                         }
                         else imag.setImageResource(R.drawable.cactus1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     }
                     setCount(count + 1);
 
@@ -131,10 +141,10 @@ public class MainActivity extends AppCompatActivity {
             else if(value.equals("aloe_vera")){
                 int found = 0;
                 if(found == 0){
-                    ImageView imag = (ImageView) findViewById(R.id.primer);
-                    ImageView imag1 = (ImageView) findViewById(R.id.segon);
-                    ImageView imag2 = (ImageView) findViewById(R.id.tercer);
-                    ImageView imag3 = (ImageView) findViewById(R.id.quart);
+                    ImageButton imag = (ImageButton) findViewById(R.id.primer);
+                    ImageButton imag1 = (ImageButton) findViewById(R.id.segon);
+                    ImageButton imag2 = (ImageButton) findViewById(R.id.tercer);
+                    ImageButton imag3 = (ImageButton) findViewById(R.id.quart);
                     String s = String.valueOf(imag.getTag());
                     String s1 = String.valueOf(imag1.getTag());
                     String s2 = String.valueOf(imag2.getTag());
@@ -162,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(found == 0){
                     if(count % 4 == 0){
-                        ImageView imag = (ImageView) findViewById(R.id.primer);
+                        ImageButton imag = (ImageButton) findViewById(R.id.primer);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res")) imag.setTag("aloe1");
                         if(s.equals("aloe1") && imag.getVisibility()==imag.VISIBLE){
@@ -170,9 +180,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("aloe4");
                         }
                         else imag.setImageResource(R.drawable.aloe1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else if(count % 4 == 1){
-                        ImageView imag = (ImageView) findViewById(R.id.segon);
+                        ImageButton imag = (ImageButton) findViewById(R.id.segon);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res1")) imag.setTag("aloe1");
                         if(s.equals("aloe1") && imag.getVisibility()==imag.VISIBLE){
@@ -180,9 +190,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("aloe4");
                         }
                         else imag.setImageResource(R.drawable.aloe1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else if(count % 4 == 2){
-                        ImageView imag = (ImageView) findViewById(R.id.tercer);
+                        ImageButton imag = (ImageButton) findViewById(R.id.tercer);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res2")) imag.setTag("aloe1");
                         if(s.equals("aloe1") && imag.getVisibility()==imag.VISIBLE){
@@ -190,9 +200,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("aloe4");
                         }
                         else imag.setImageResource(R.drawable.aloe1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else{
-                        ImageView imag = (ImageView) findViewById(R.id.quart);
+                        ImageButton imag = (ImageButton) findViewById(R.id.quart);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res3")) imag.setTag("aloe1");
                         if (s.equals("aloe1") && imag.getVisibility() == imag.VISIBLE) {
@@ -201,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
                         } else {
                             imag.setImageResource(R.drawable.aloe1);
                         }
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     }
                     setCount(count + 1);
                 }
@@ -213,10 +223,10 @@ public class MainActivity extends AppCompatActivity {
             else if (value.equals("daisy")){
                 int found = 0;
                 if(found == 0){
-                    ImageView imag = (ImageView) findViewById(R.id.primer);
-                    ImageView imag1 = (ImageView) findViewById(R.id.segon);
-                    ImageView imag2 = (ImageView) findViewById(R.id.tercer);
-                    ImageView imag3 = (ImageView) findViewById(R.id.quart);
+                    ImageButton imag = (ImageButton) findViewById(R.id.primer);
+                    ImageButton imag1 = (ImageButton) findViewById(R.id.segon);
+                    ImageButton imag2 = (ImageButton) findViewById(R.id.tercer);
+                    ImageButton imag3 = (ImageButton) findViewById(R.id.quart);
                     String s = String.valueOf(imag.getTag());
                     String s1 = String.valueOf(imag1.getTag());
                     String s2 = String.valueOf(imag2.getTag());
@@ -244,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(found == 0){
                     if(count % 4 == 0){
-                        ImageView imag = (ImageView) findViewById(R.id.primer);
+                        ImageButton imag = (ImageButton) findViewById(R.id.primer);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res")) imag.setTag("daisy1");
                         if(s.equals("daisy1") && imag.getVisibility()==imag.VISIBLE){
@@ -252,9 +262,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("daisy4");
                         }
                         else imag.setImageResource(R.drawable.daisy1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else if(count % 4 == 1){
-                        ImageView imag = (ImageView) findViewById(R.id.segon);
+                        ImageButton imag = (ImageButton) findViewById(R.id.segon);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res1")) imag.setTag("daisy1");
                         if(s.equals("daisy1") && imag.getVisibility()==imag.VISIBLE){
@@ -262,9 +272,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("daisy4");
                         }
                         else imag.setImageResource(R.drawable.daisy1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else if(count % 4 == 2){
-                        ImageView imag = (ImageView) findViewById(R.id.tercer);
+                        ImageButton imag = (ImageButton) findViewById(R.id.tercer);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res2")) imag.setTag("daisy1");
                         if(s.equals("daisy1") && imag.getVisibility()==imag.VISIBLE){
@@ -272,9 +282,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("daisy4");
                         }
                         else imag.setImageResource(R.drawable.daisy1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else{
-                        ImageView imag = (ImageView) findViewById(R.id.quart);
+                        ImageButton imag = (ImageButton) findViewById(R.id.quart);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res3")) imag.setTag("daisy1");
                         if(s.equals("daisy1") && imag.getVisibility()==imag.VISIBLE){
@@ -282,7 +292,7 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("daisy4");
                         }
                         else imag.setImageResource(R.drawable.daisy1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     }
                     setCount(count + 1);
 
@@ -295,10 +305,10 @@ public class MainActivity extends AppCompatActivity {
             else{
                 int found = 0;
                 if(found == 0){
-                    ImageView imag = (ImageView) findViewById(R.id.primer);
-                    ImageView imag1 = (ImageView) findViewById(R.id.segon);
-                    ImageView imag2 = (ImageView) findViewById(R.id.tercer);
-                    ImageView imag3 = (ImageView) findViewById(R.id.quart);
+                    ImageButton imag = (ImageButton) findViewById(R.id.primer);
+                    ImageButton imag1 = (ImageButton) findViewById(R.id.segon);
+                    ImageButton imag2 = (ImageButton) findViewById(R.id.tercer);
+                    ImageButton imag3 = (ImageButton) findViewById(R.id.quart);
                     String s = String.valueOf(imag.getTag());
                     String s1 = String.valueOf(imag1.getTag());
                     String s2 = String.valueOf(imag2.getTag());
@@ -326,7 +336,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(found == 0){
                     if(count % 4 == 0){
-                        ImageView imag = (ImageView) findViewById(R.id.primer);
+                        ImageButton imag = (ImageButton) findViewById(R.id.primer);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res")) imag.setTag("mint1");
                         if(s.equals("mint1") && imag.getVisibility()==imag.VISIBLE){
@@ -334,9 +344,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("mint4");
                         }
                         else imag.setImageResource(R.drawable.mint1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else if(count % 4 == 1){
-                        ImageView imag = (ImageView) findViewById(R.id.segon);
+                        ImageButton imag = (ImageButton) findViewById(R.id.segon);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res1")) imag.setTag("mint1");
                         if(s.equals("mint1") && imag.getVisibility()==imag.VISIBLE){
@@ -344,9 +354,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("mint4");
                         }
                         else imag.setImageResource(R.drawable.mint1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else if(count % 4 == 2){
-                        ImageView imag = (ImageView) findViewById(R.id.tercer);
+                        ImageButton imag = (ImageButton) findViewById(R.id.tercer);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res2")) imag.setTag("mint1");
                         if(s.equals("mint1") && imag.getVisibility()==imag.VISIBLE){
@@ -354,9 +364,9 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("mint4");
                         }
                         else imag.setImageResource(R.drawable.mint1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     } else{
-                        ImageView imag = (ImageView) findViewById(R.id.quart);
+                        ImageButton imag = (ImageButton) findViewById(R.id.quart);
                         String s = String.valueOf(imag.getTag());
                         if(s.equals("res3")) imag.setTag("mint1");
                         if(s.equals("mint1") && imag.getVisibility()==imag.VISIBLE){
@@ -364,7 +374,7 @@ public class MainActivity extends AppCompatActivity {
                             imag.setTag("mint4");
                         }
                         else imag.setImageResource(R.drawable.mint1);
-                        imag.setVisibility(ImageView.VISIBLE);
+                        imag.setVisibility(ImageButton.VISIBLE);
                     }
                     setCount(count + 1);
 
