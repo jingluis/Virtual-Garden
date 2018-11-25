@@ -24,10 +24,15 @@
         android:layout_height="69dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:drawableLeft="@drawable/aloe1peq"
+        android:adjustViewBounds="true"
+        android:drawableStart="@drawable/aloe1peq"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
         android:text="CACTUS"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="24sp"></Button>
+        android:textSize="18sp"></Button>
+
+
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dip"
@@ -38,12 +43,14 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/aloe1peq"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/aloe1peq"
         android:text="ALOE VERA"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="24sp"></Button>
+        android:textSize="18sp">
+
+    </Button>
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dip"
@@ -54,12 +61,12 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/aloe1peq"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/daisysearch"
         android:text="DAISY"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="24sp"></Button>
+        android:textSize="18sp"></Button>
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dip"
@@ -72,9 +79,10 @@
         android:layout_height="69dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:drawableLeft="@drawable/aloe1peq"
+        android:drawableStart="@drawable/aloe1peq"
 
+        android:drawableLeft="@drawable/aloe1peq"
         android:text="MINT"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="24sp"></Button>
+        android:textSize="18sp"></Button>
 </LinearLayout>
