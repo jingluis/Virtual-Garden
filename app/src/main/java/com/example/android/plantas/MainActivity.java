@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     @Override
@@ -127,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 TextView t = (TextView) findViewById(R.id.texto);
-                t.setVisibility(TextView.INVISIBLE);
+                t.setVisibility(TextView.GONE);
             }
             else if(value.equals("aloe_vera")){
                 int found = 0;
