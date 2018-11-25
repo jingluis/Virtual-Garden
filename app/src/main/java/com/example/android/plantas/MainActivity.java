@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                     imag.setImageResource(R.drawable.cactus1);
                     imag.setVisibility(ImageView.VISIBLE);
                 }
+                TextView t = (TextView) findViewById(R.id.texto);
+                t.setVisibility(TextView.INVISIBLE);
                 setCount(count + 1);
             }
             else if(value.equals("aloe_vera")){
@@ -86,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
                     imag.setImageResource(R.drawable.aloe1);
                     imag.setVisibility(ImageView.VISIBLE);
                 }
+                TextView t = (TextView) findViewById(R.id.texto);
+                t.setVisibility(TextView.INVISIBLE);
                 setCount(count + 1);
             }
             else if (value.equals("daisy")){
@@ -106,6 +110,8 @@ public class MainActivity extends AppCompatActivity {
                     imag.setImageResource(R.drawable.daisy1);
                     imag.setVisibility(ImageView.VISIBLE);
                 }
+                TextView t = (TextView) findViewById(R.id.texto);
+                t.setVisibility(TextView.INVISIBLE);
                 setCount(count + 1);
 
             }
@@ -127,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
                     imag.setImageResource(R.drawable.mint1);
                     imag.setVisibility(ImageView.VISIBLE);
                 }
+                TextView t = (TextView) findViewById(R.id.texto);
+                t.setVisibility(TextView.INVISIBLE);
                 setCount(count + 1);
             }
         }
