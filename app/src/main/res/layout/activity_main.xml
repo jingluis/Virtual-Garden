@@ -40,7 +40,9 @@
                android:layout_height="153dp"
                android:layout_weight="1"
                android:src="@drawable/cactus1"
-               android:visibility="invisible" />
+               android:tag="res"
+               android:visibility="invisible"
+               />
 
            <ImageView
                android:id="@+id/segon"
@@ -48,6 +50,7 @@
                android:layout_height="match_parent"
                android:layout_weight="1"
                android:src="@drawable/aloe1"
+               android:tag="res1"
                android:visibility="gone"/>
        </LinearLayout>
 
@@ -72,6 +75,8 @@
                android:layout_height="149dp"
                android:layout_weight="1"
                android:src="@drawable/daisy1"
+               android:tag="res2"
+
                android:visibility="invisible"/>
 
            <ImageView
@@ -80,6 +85,7 @@
                android:layout_height="match_parent"
                android:layout_weight="1"
                android:src="@drawable/mint1"
+               android:tag="res3"
                android:visibility="invisible"/>
 
        </LinearLayout>
